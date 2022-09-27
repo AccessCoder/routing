@@ -1,8 +1,14 @@
-export default function ButtonPage(){
+type ButtonPageProps = {
+    name:string;
+}
+
+export default function ButtonPage(props:ButtonPageProps){
+
+
     return(
         <div>
         <h1> ButtonPage </h1>
-        <button>Useless Button</button>
+        <button>{props.name}</button>
         </div>
     )
 
